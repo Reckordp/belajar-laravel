@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Auth;
+
+class UserController extends BaseController
+{
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    function getIndex()
+    {
+    	return view('laman_utama');
+    }
+
+    function login()
+    {
+    	return view('login');
+    }
+
+    function auth()
+    {
+    	echo $_POST['user'];
+    	return "";
+    }
+}
