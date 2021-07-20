@@ -1,0 +1,16 @@
+.form-control {
+	padding: 10px;
+	padding-left: 20px;
+	margin-top: 0;
+}
+
+form .input-group p {
+	margin-left: 2px;
+	text-align: left;
+	margin-bottom: 0;
+	opacity: 0.7;
+}
+
+form .input-group {
+	margin-top: 16px;
+}
